@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -96,7 +96,27 @@ const Footer = () => {
         </div>
         <div className="container-fluid copyright">
           <center>
-            <p>Designed by <Link to="https://www.linkedin.com/in/avik-ghosh-987a9b207/"  style={{textDecoration:"none", color:"white"}}><b> Avik Ghosh</b></Link> , <Link to="https://www.linkedin.com/in/biswajit035/"  style={{textDecoration:"none", color:"white"}}><b>Biswajit Debnath</b></Link> & <Link to="https://www.linkedin.com/in/kundan-prem-nayak-a47980202/"  style={{textDecoration:"none", color:"white"}}><b>Kundan Prem Nayak</b></Link>  </p>
+            <p>
+              Designed by <strong>Avik Ghosh</strong>
+              <Link
+                to="https://www.linkedin.com/in/avik1320/"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <b>
+                  {" "}
+                  <BsLinkedin />
+                </b>
+              </Link>
+              <Link
+                to="https://github.com/Avik1320"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <b>
+                  {" "}
+                  <BsGithub />
+                </b>
+              </Link>
+            </p>
           </center>
         </div>
       </div>
