@@ -1,0 +1,86 @@
+@import '../Abstracts/mixin';
+
+.main{
+    position: relative;
+    height: 90vh;
+
+    
+    // ::-webkit-scrollbar{
+    //     display: none;
+    // }
+    .student-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #c4c4c4;
+        padding: 10px 10px;
+        gap: 10px;
+        width: 50%;
+    
+        @include mobile {
+            width: 90%;
+    
+        }
+    
+        .titles {
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+            font-weight: 600;
+    
+            @include mobile {
+                font-size: 16px;
+                gap: 10px;
+            }
+        }
+    
+        .lists {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding-bottom: 10px;
+    
+            ::-webkit-scrollbar{
+                display: none;
+            }
+    
+            @include mobile {
+                gap: 10px;
+            }
+    
+            .year {
+                width: 200px;
+                font-size: 18px;
+                font-weight: 600;
+                // background-color: red;
+    
+                @include mobile {
+                    width: 150px;
+                    font-size: 15px;
+                    // background-color: red;
+                }
+            }
+            .delete-btn{
+                margin-left: 100px;
+                font-size: 20px;
+                color: red;
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-end;
+                border: none;
+                background-color: white;
+    
+                @include mobile{
+                    margin-left: 10px;
+                    font-size: 16px;
+                }
+            }
+    
+    
+        }
+    }
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}

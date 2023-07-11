@@ -1,0 +1,52 @@
+@import '../Abstracts/Mixin';
+
+.main-body{
+    // position: absolute;
+    // bottom: 0;
+    background-color: #272727;
+    height: fit-content;
+
+
+    .footer-text{
+        @include mobile{
+            // background-color: red;
+            padding-bottom: 20px;
+
+            .avi-text1{
+                // background-color: green;
+                font-size: 20px;
+                font-weight: 800;
+            }
+            .address{
+                // background-color: green;
+                @include mobile{
+                    width: 70vw;
+                }
+            }
+        }
+
+    }
+    .icons{
+        .item{  
+            &:hover{
+                transform: scale(1.2);
+
+            }          
+            .item-body{
+                color: white;
+
+                &:hover{
+                    color: var(--col);
+                }
+            }
+        }
+    }
+    .copyright{
+        p{
+            margin-bottom: 0px;
+            color: white;
+            padding-bottom: 10px;
+        }
+    }
+    
+}

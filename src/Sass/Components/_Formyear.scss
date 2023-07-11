@@ -1,0 +1,112 @@
+@import '../Abstracts/mixin';
+
+.placement-form {
+    padding: 50px 25px;
+    overflow-y: scroll;
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #4e5180;
+        text-transform: uppercase;
+        max-width: 100%;
+        // background-color: green;
+    }
+
+    .form-first {
+        position: relative;
+        margin-top: 20px;
+        border: 2px solid #c4c4c4;
+        border-radius: 10px;
+        max-width: 100%;
+        padding: 20px 15px;
+
+
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            width: 100%;
+            margin: 0;
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+
+            .input-field {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                // background-color: orange;
+                font-size: 18px;
+                color: #616060;
+                font-weight: 600;
+                gap: 10px;
+
+                @include mobile {
+                    font-size: 15px;
+                    width: 90%;
+                }
+
+                input[type=text] {
+                    width: 80%;
+                    height: 5vh;
+                    outline: none;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    border: 2px solid #818181;
+                    // font-weight: 600;
+                    font-size: 16px;
+
+
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .F-Submit {
+                display: flex;
+                gap: 20px;
+
+                .sub {
+                    width: 8vw;
+                    height: 5vh;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: var(--col);
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+
+
+                    @include mobile {
+                        width: 50%;
+                    }
+                }
+
+                .canl {
+                    width: 8vw;
+                    height: 5vh;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #f44336;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+
+
+                    @include mobile {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

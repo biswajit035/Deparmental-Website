@@ -1,0 +1,91 @@
+@import '../Abstracts/mixin';
+
+
+.header-main {
+    // grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.75);
+    min-height: 10vh;
+    padding: 0px 20px 0px 20px;
+    // margin-left: 20vw;
+    z-index: 2;
+    background-color: white;
+
+    // .logo {
+    //     img {
+    //         width: 25vw;
+    //     }
+
+        // @include mobile {
+        //     // display: none;
+        //     min-height: 20vh;
+        // }
+    // }
+    .humberger {
+        display: none;
+
+        @include mobile {
+            display: initial;
+            font-size: 20px;
+        }
+        
+        @include tablet{
+            display: initial;
+            font-size: 20px;
+        }
+    }
+
+    .title {
+        font-size: 25px;
+        text-transform: uppercase;
+        color: var( --coldash);
+        font-weight: 600;
+        // background-color: red; 
+
+        @include mobile{
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+    }
+
+    .logout-acc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: green;
+        gap: 10px;
+        color: var(--col);
+
+        .logout-icon{
+            display: none;
+            font-size: 22px;
+
+            @include mobile{
+                display: initial;
+            }
+        }
+        @include mobile{
+            span{
+                display: none;
+            }
+        }
+        .logout{
+            background-color: #ff4800;
+            width: 6vw;
+            height: 5vh;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            // font-weight: ;
+
+            @include mobile{
+                display: none;
+            }
+        }
+
+    }
+}

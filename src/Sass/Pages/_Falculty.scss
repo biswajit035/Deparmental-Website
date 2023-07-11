@@ -1,0 +1,40 @@
+@import '../Abstracts/Mixin';
+
+.faculty-main {
+    // background-color: red;
+    max-width: 100vw;
+    min-height: 100vh;
+
+    .heading {
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #ff4800;
+        margin-bottom: 20px;
+    }
+
+    .fal-body {
+        display: flex;
+        justify-content: center;
+        // background-color: green;
+
+        .fal-items{
+            // background-color: blue;
+            display: flex;
+            width: 80vw;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+
+            @include mobile{
+                width: 100vw;
+                gap: 0.5rem;
+            }
+
+        }
+
+    }
+}

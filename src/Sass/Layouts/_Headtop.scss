@@ -1,0 +1,92 @@
+@import '../Abstracts/Mixin';
+
+.headtop-main {
+    // background-color: red;
+    height: 10vh;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 10px;
+    margin: 0px;
+    // background-color: red;
+    gap: 0rem;
+    // background-color: red;
+    align-items: center;
+    max-width: 100vw;
+    box-sizing: border-box;
+
+    @include mobile{
+        gap: 1rem;
+        background-color: rgb(230, 230, 230);
+    }
+
+   .humberger{
+    display: none;
+    @include mobile{
+        display: initial;
+        font-size: 1.5rem;
+        // background-color: red;
+    }
+   }
+    .logo{
+        width: 20vw;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        // background-color: red;
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .title {
+        width: fit-content;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        // background-color: green;
+
+        @include mobile{
+            width: 100%;
+            font-size: 1.3rem;
+        }
+
+        span {
+            color: var(--col);
+        }
+    }
+
+    .contact {
+        font-size: 1.2rem;
+        display: flex;
+        // width: 10vw;
+        // background-color: red;
+        flex-direction: column;
+        justify-content: flex-start;
+
+
+        .email, .phone{
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+        }
+        
+        @include mobile{
+            display: none;
+        }
+
+        .contact-content{
+            padding-left: 10px;
+            font-weight: 700; 
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(69, 67, 67);
+
+            &:hover{
+                color: var(--col);
+            }
+        }
+    }
+}

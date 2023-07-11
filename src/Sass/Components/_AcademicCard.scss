@@ -1,0 +1,91 @@
+@import '../Abstracts/Mixin';
+
+.Aca-card-main {
+    // background-color: red;
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0px 44px -12px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    transition-duration: 0.2s;
+
+    &:hover{
+        scale: 1.05;
+    }
+
+    @include mobile {
+        width: 60vw;
+    }
+
+
+    .card-icon {
+        color: #e94200;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        @include laptopl{
+            font-size: 1.5rem;
+        }
+    }
+
+    .card-veiw {
+        display: flex;
+        gap: 2vw;
+
+        @include mobile {
+            gap: 0.5rem;
+        }
+
+
+        .preview {
+            background-color: #f26229;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: #d94003;
+            }
+            width: fit-content;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            color: white;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+
+            &:focus{
+                outline: none;
+            }
+            
+           
+
+            @include mobile {
+                width: 25vw;
+            }
+
+        }
+
+        .download {
+            background-color: #0fb97b;
+            &:hover{
+                // scale: 1.02;
+                background-color: #05764d;
+            }
+
+            
+            @extend .preview
+
+            
+        }
+    }
+}

@@ -1,0 +1,146 @@
+@import '../Abstracts/Mixin';
+
+.main-home {
+    display: flex;
+    padding: 0px 40px;
+    min-height: 100vh;
+    max-width: 100vw;
+    // background-color: red;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .left-main {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        min-height: 100%;
+        margin-top: 2vh;
+
+        @include mobile {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .up-main {
+            // background-color: yellow;
+            height: 70%;
+            width: 100%;
+
+            @include mobile {
+                // background-color: red;
+                width: 100%;
+            }
+
+            .carousel-indicators {
+                display: none;
+            }
+
+
+
+        }
+
+        .Down-main {
+            width: 100%;
+            height: 50%;
+            margin-top: 40px;
+            padding: 10px 10px;
+
+            .event-head {
+                // background-color: red;
+                display: flex;
+                justify-content: center;
+                font-size: 1.5rem;
+                padding: 20px;
+                width: 90%;
+                font-weight: 700;
+                color: #4e4d4d;
+
+
+
+                // text-transform: uppercase;
+
+                @include mobile {
+                    width: 90vw;
+                }
+            }
+
+            .event-cards {
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+
+                @include mobile {
+                    flex-direction: column;
+                    // background-color: red;
+                    width: 90vw;
+                    align-items: center;
+                    padding: 10px 0px;
+                }
+
+                .card {
+                    @include mobile {
+
+                        // background-color: yellow;
+                        width: 60vw;
+                    }
+
+                    .card-img {
+                        border-radius: 20px;
+
+                    }
+
+                }
+
+
+            }
+
+
+        }
+    }
+
+    .right-main {
+        // background-color: green;
+        width: 40vw;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 30px;
+
+
+        @include mobile {
+            // background-color: red;
+            width: 90vw;
+        }
+
+
+
+
+
+        .notice-part {
+            // background-color: var(--col);
+            font-size: 18px;
+            padding: 30px 30px;
+            border-radius: 20px;
+            box-shadow: -4px -3px 34px -5px rgba(0, 0, 0, 0.75);
+            width: 100%;
+            height: fit-content;
+
+            @include mobile {
+                // display: flex;
+                // flex-direction: column;
+                width: 90vw;
+            }
+
+            p {
+                .notice-content {
+                    color: green;
+                }
+            }
+
+
+        }
+    }
+}

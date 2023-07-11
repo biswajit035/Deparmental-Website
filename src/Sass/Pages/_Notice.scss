@@ -1,0 +1,35 @@
+@import '../Abstracts/Mixin';
+
+.notice-main {
+    // background-color: red;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    
+
+    .heading{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: rgb(86, 85, 85);
+        margin-bottom: 20px;
+    }
+
+    .notice-body {
+        // background-color: green;
+        font-size: 18px;
+        padding: 20px 30px;
+        border-radius: 20px;
+        box-shadow: -4px -3px 34px -5px rgba(0, 0, 0, 0.75);
+        width: 70vw;
+
+        @include mobile{
+            width: 90vw;
+        }
+    }
+}

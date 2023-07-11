@@ -1,0 +1,28 @@
+@import './variables';
+@mixin tablet {
+    @media($mobile <= width <=$tablet) {
+        @content;
+
+    }
+}
+@mixin mobile {
+    @media(width <=$mobile) {
+        @content;
+
+    }
+}
+@mixin laptop{
+    @media($tablet <= width <= $laptop){
+        @content;
+    }
+}
+@mixin laptopl{
+    @media(width >  $laptop){
+        @content;
+    }
+}
+
+:root{
+    --col: rgb(255, 72, 0, 1);
+    --coldash: #4E5180;
+}

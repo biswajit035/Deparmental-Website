@@ -1,0 +1,117 @@
+@import '../Abstracts/Mixin';
+
+.login-main{
+    // background-color: red;
+    padding: 20px 20px;
+    display: flex;
+    
+    @include mobile{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .left{
+        width: 60vw;
+        // background-color: yellow;
+
+        @include mobile{
+            display: none;
+        }
+        .login-img{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 30vw;
+            }
+        }
+    }
+    .right{
+        width: 40vw;
+        // background-color: green;
+        display: flex;
+            justify-content: center;
+            padding: 40px 40px;
+
+        @include mobile{
+            width: 100%;
+            padding: 10px 10px;
+        }
+
+        .login-body{
+            
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+            // background-color: yellow;
+            border-radius: 20px;
+            box-shadow: -2px 7px 39px -1px rgba(0,0,0,0.75);
+            gap: 2rem;
+            padding-bottom: 20px;
+
+            @include mobile{
+                width: 100%;
+                padding-bottom: 50px;
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                img{
+                width: 5vw;
+
+                @include mobile{
+                    width: 15vw;
+                }
+
+                }
+            }
+            .login-details{
+                display: flex;
+                justify-content: center;
+                // background-color: red;
+                .form-body{
+                    width: 20vw;
+                    @include mobile{
+                        width: 70vw;
+                    }
+                }
+                legend{
+                    // color: red;
+                    width: 100%;
+                    font-size: 1rem;
+                }
+                input{
+                    width: 100%;
+                    border: 1px solid grey;
+                    border-radius: 10px;
+                    padding: 5px 15px;
+                }
+                .login-btn{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    padding: 5px 5px;
+                    text-transform: uppercase;
+                    background-color: #ff4800;
+                    border: none;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                }
+                .forget-pass{
+                    padding-left: 10px;
+                    text-decoration: none;
+                    color: initial;
+                    &:hover{
+                        color: #ff4800;
+                        cursor: pointer;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

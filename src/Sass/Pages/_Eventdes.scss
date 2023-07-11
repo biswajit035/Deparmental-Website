@@ -1,0 +1,15 @@
+@import '../Abstracts/Mixin';
+
+.eventdes-main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    .eventdes-body{
+        font-size: 18px;
+        padding: 20px 30px;
+        border-radius: 20px;
+        box-shadow: -4px -3px 34px -5px rgba(0, 0, 0, 0.75);
+        width: 70vw;
+    }
+}

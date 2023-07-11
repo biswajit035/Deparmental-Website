@@ -1,0 +1,127 @@
+@import '../Abstracts/mixin';
+
+
+
+.left-side {
+    transition: 0.4s;
+    box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--coldash);
+    overflow-y: scroll;
+    // display: grid;
+    // grid-column: 1/2;
+    // grid-row: 1/2;
+    // flex: 1;
+    width: 18vw;
+    z-index: 1;
+    padding: 30px 8px 30PX 10px;
+    background-color: white;
+
+
+
+    @include tablet {
+        // display: none;
+        position: absolute;
+        max-width: 25vw;
+        left: -300px;
+        max-height: 93vh;
+    }
+
+    @include mobile {
+        position: absolute;
+        left: -300px;
+        min-width: 60vw;
+        max-height: 93vh;
+        // grid-column-end: 1/2;
+        // flex: 1;
+    }
+
+    // align-items: center;
+    .logo {
+        img {
+            width: 100%;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    // .humberger {
+    //     display: none;
+
+    //     @include mobile {
+    //         display: initial;
+    //         font-size: 25px;
+    //     }
+    // }
+
+    .profile {
+        padding: 35px 0px;
+
+        @include mobile {
+            // display: none;
+            padding-top: 80px;
+        }
+
+        .profile-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .profile-pic {
+                border-radius: 20px;
+                font-size: 40px;
+
+            }
+
+            .container {
+                padding-top: 10px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    .nav-contents {
+        padding: 30px 20px;
+        font-size: 20px;
+        font-weight: 500;
+
+        @include mobile {
+            // display: none;
+        }
+
+        .nav-items {
+            // background-color: red;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            //  background-color: red;
+
+            .teachers {
+                display: flex;
+                gap: 10px;
+                text-decoration: none;
+                color: var(--coldash);
+
+            }
+
+            .active {
+                font-weight: 600;
+                color: red;
+
+            }
+
+        }
+    }
+}
+
+.toggle {
+    left: -10px;
+}

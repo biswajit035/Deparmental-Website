@@ -1,0 +1,213 @@
+@import '../Abstracts/mixin';
+
+
+.main {
+    padding: 50px 25px;
+    overflow-y: scroll;
+    height: 90vh;
+
+    // background-color: red;
+
+    .add-teacher {
+        // background-color: red;
+        display: flex;
+        height: 5vh;
+        // background-color: red;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            color: var( --coldash);
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+
+
+        .add {
+            width: fit-content;
+            height: 7vh;
+            font-size: 16px;
+            padding: 10px 10px;
+            border-radius: 10px;
+            background-color: var( --coldash);
+            color: white;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+
+            @include mobile {
+                right: 20px;
+                width: 35vw;
+
+            }
+            @include tablet{
+                width: 18vw;
+                height: 8vh;
+                // bottom: 10px;
+
+            }
+            @include laptop{
+                width: 13vw;
+                height: 10vh;
+            }
+
+            .btn-add {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    .teacher-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #c4c4c4;
+        padding: 10px 10px;
+        gap: 10px;
+        
+
+
+        .titles {
+            @include mobile{
+                font-size: 12px;
+                gap: 10px;
+            }
+            
+
+            .tname-i{
+                width: 70px;
+                @include mobile{
+                    width: 40px;
+                }
+            }
+            .tname-n{
+                width: 200px;
+                @include mobile{
+                    width: 150px;
+                }
+            }
+            .tname-g{
+                width: 70px;
+                @include mobile{
+                    // display: none;
+                    width: 50px;
+                }
+                @include tablet{
+                    display: none;
+                }
+            }
+            .tname-d{
+                width: 200px;
+                @include mobile{
+                    display: none;
+                }
+                @include tablet{
+                    display: none;
+                }
+
+            }
+            .tname-e{
+                width: 150px;
+                @include mobile{
+                    display: none;
+                }
+            }
+            .tname-p{
+                width: 100px;
+                margin-left: 80px;
+                @include mobile{
+                    display: none;
+                }
+            }
+        }
+
+        // width: auto;
+        // height: auto;
+        // background-color: red;
+        .lists {
+                .profile-img {
+                    width: 60%;
+                    height: 60%;
+                    align-items: center;
+                    // background-color: green;
+                    @include mobile{
+                        width: 40px;
+                    }
+    
+                    img {
+                        border-radius: 10px;
+    
+                        @include mobile{
+                            width: 40px;
+    
+                        }
+                    }
+                }
+            // }
+
+            
+
+            .name {
+                margin: auto auto;
+                @include mobile{
+                    font-size: 12px;
+                    // background-color: red;
+                }
+            }
+            .gen{
+                width: 70px;
+                @include mobile{
+                    // display: none;
+                    width: 50px;
+                    font-size: 12px;
+                }
+                @include tablet{
+                    display: none;
+                }
+            }
+            .deg{
+                width: 200px;
+                @include mobile{
+                    display: none;
+                }
+                @include tablet{
+                    display: none;
+                }
+            }
+            .email{
+                width: 150px;
+                // background-color: red;
+                @include mobile{
+                    display: none;
+                }
+            }
+            .ph{
+                width: 100px;
+                margin-left: 80px;
+                @include mobile{
+                    display: none;
+                }
+            }
+            .delete-btn{
+                // margin-left: 50px;
+                // background-color: red;
+                font-size: 20px;
+                color: red;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                border: none;
+                // background-color: white;
+
+                @include mobile{
+                    // margin-left: 10px;
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+    }
+}

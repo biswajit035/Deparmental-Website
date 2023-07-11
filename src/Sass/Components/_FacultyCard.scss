@@ -1,0 +1,63 @@
+@import '../Abstracts/Mixin';
+
+.fal-card {
+    // background-color: red;
+    // width: 20vw;
+    // margin-top: 10px;
+    box-shadow: 3px 3px 20px -4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    // padding: 30px 50px;
+    margin-bottom: 20px;
+    display: flex;
+    min-width: 25vw;
+    height: fit-content;
+    padding: 6px;
+    gap: 1.5rem;
+    // background-color: red;
+
+    @include mobile {
+        width: 90vw;
+        padding: 5px;
+        gap: 1rem;
+
+        // background-color: red;
+    }
+
+    .card-img {
+        display: flex;
+        justify-content: center;
+        // background-color: yellow;
+        // border: 1px solid black;
+        width: 10vw;
+        min-height: 20vh;
+        padding: 6px;
+        background-size: cover;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include mobile{
+            width: 50%;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .fal-name {
+            font-size: 20px;
+
+            @include mobile {}
+        }
+
+        .fal-email {
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+
+        .fal-desg {
+            font-size: 15px;
+        }
+    }
+}
