@@ -97,10 +97,11 @@ const Footer = () => {
         <div className="container-fluid copyright">
           <center>
             <p>
-              Designed by <strong>Avik Ghosh</strong>
+              Designed by <strong>Biswajit Debnath</strong>
               <Link
-                to="https://www.linkedin.com/in/avik1320/"
+                to="https://www.linkedin.com/in/biswajit035/"
                 style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
               >
                 <b>
                   {" "}
@@ -108,8 +109,9 @@ const Footer = () => {
                 </b>
               </Link>
               <Link
-                to="https://github.com/Avik1320"
+                to="https://github.com/biswajit035"
                 style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
               >
                 <b>
                   {" "}
