@@ -24,6 +24,7 @@ const Faculty = () => {
 
   useEffect(() => {
     fetchdata();
+    console.log(host);
   }, []);
 
   return (

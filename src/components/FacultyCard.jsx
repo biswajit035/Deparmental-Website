@@ -1,6 +1,7 @@
 import React from "react";
 
 const FacultyCard = ({name,designation,email,imageurl}) => {
+  console.log(imageurl);
   return (
     <div className="fal-card">
       <div
