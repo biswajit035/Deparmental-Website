@@ -3,6 +3,12 @@
 Departmental Website
 </h1>
 
+
+<img src="https://github.com/biswajit035/Deparmental-Website/assets/88304589/79576162-8e1d-452a-930d-f9cbd2bbfee8" alt="laptop" style="width: 50%;"/> <img src="https://github.com/biswajit035/Deparmental-Website/assets/88304589/081a9e42-fef0-415f-8508-bc9ea334d546" alt="mobile" style="width: 250px; height: 350px"/>
+
+
+
+
 <h2 align="center">
 A full stack departmental website devolped on MERN STACK.
 </h2>
