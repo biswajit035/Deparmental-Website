@@ -119,6 +119,27 @@ const Footer = () => {
                 </b>
               </Link>
             </p>
+             <p>
+              Designed by <strong>Avik Ghosh</strong>
+              <Link
+                to="https://www.linkedin.com/in/avik1320/"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <b>
+                  {" "}
+                  <BsLinkedin />
+                </b>
+              </Link>
+              <Link
+                to="https://github.com/Avik1320"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <b>
+                  {" "}
+                  <BsGithub />
+                </b>
+              </Link>
+            </p>
           </center>
         </div>
       </div>
